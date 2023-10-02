@@ -1,0 +1,178 @@
+/* Reset some default browser styles */
+/* body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0; */
+
+    img {
+        height: 25px;
+    }
+    
+    /* Apply basic styling */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: black;
+        color: white;
+        background-image: url(./images/SlimewayLogoFinal.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        max-width: 100%;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between;
+        flex: 0 0 30%;
+        justify-content: space-between;
+}
+    
+    
+    ul {
+        max-width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: right;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-left: 20px; /* Change margin-right to margin-left */
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    nav a:hover {
+        color: #ff9900;
+    }
+    
+    main {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 0px;
+        background-color: #15ff00;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Adjusted spacing between products */
+        justify-content: center;
+    }
+
+    
+    .product {
+        background: rgb(0, 0, 0);
+        border: 3px solid #8200f9;
+        border-radius: 8px;
+        padding: 20px; /* Increased padding for better spacing */
+        margin-bottom: 0px;
+        transition: transform 0.3s;
+        flex: 0 0 calc(30% - 20px); /* Adjusted width for three products per row */
+        align-items: center;
+}
+
+
+
+    
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .product h2 {
+        font-size: 24px; /* Slightly reduced font size */
+        margin-top: 0px;
+        color: white;
+    }
+    
+    .product p {
+        font-size: 16px; /* Reduced font size */
+        color: white;
+        margin-top: 15px;
+    }
+    
+    .price {
+        font-size: 18px; /* Adjusted font size */
+        font-weight: bold;
+        color: #ff9900;
+        margin-top: 20px;
+    }
+    
+    button {
+        background-color: #0012ff;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #333;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    
+    @media (max-width: 768px) {
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+        
+        body{ 
+            max-width: 100%;
+        }
+    
+        header {
+            padding: 10px 0;
+            background-image: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .product {
+            /* flex: 0 0 calc(50% - 10px); Two products per row on smaller screens */
+            padding: 20px;
+            margin-bottom: 0px;
+            transition: transform 0.3s;
+            flex: 0 0 calc(30% - -33px);
+
+        flex-direction: column;
+        }
+
+    }
+    
